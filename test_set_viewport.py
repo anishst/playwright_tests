@@ -1,7 +1,7 @@
 
 
 def test_new_pages(playwright):
-    browser = playwright.chromium.launch(headless=False, slow_mo=500)
+    browser = playwright.chromium.launch(headless=True, slow_mo=500)
     context1 = browser.new_context()
     page = context1.new_page()
     # https://playwright.dev/python/docs/emulation
